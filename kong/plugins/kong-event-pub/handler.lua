@@ -212,7 +212,7 @@ function KongEventPub:log(config)
     end
     destination_topic = compile_destination
   else
-    destination_topic = config.destination_topic
+    destination_topic = config.topic
   end
 
   destination_topic = sanitize_topic_name(destination_topic)

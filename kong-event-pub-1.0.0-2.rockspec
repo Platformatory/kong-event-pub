@@ -1,6 +1,6 @@
 package = "kong-event-pub"
 
-version = "1.0.0-1"
+version = "1.0.0-2"
 
 supported_platforms = {"linux"}
 
@@ -10,7 +10,7 @@ source = {
 }
 
 description = {
-  summary = "Turn Kong API logs into an event solurce",
+  summary = "Turn Kong API logs into an event source",
   license = "MIT",
   maintainer = "Pavan Keshavamurthy <pavan@platformatory.com>"
 }
