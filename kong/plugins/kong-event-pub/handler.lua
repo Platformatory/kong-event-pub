@@ -163,6 +163,7 @@ local function list_toset(t)
 end
 
 local function sanitize_topic_name(str)
+	kong.log.inspect(str)
   -- Remove any characters that are not a letter, number, dot, underscore, or hyphen
   local sanitized = str:gsub('[^%w%.%_%-]', '')
   
@@ -214,6 +215,8 @@ function KongEventPub:log(config)
   else
     destination_topic = config.topic
   end
+
+  kong.log.inspect(config.topic)
 
   destination_topic = sanitize_topic_name(destination_topic)
   kong.log.inspect("Destination topic: ", destination_topic)
