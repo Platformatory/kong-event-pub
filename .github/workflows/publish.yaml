@@ -1,7 +1,7 @@
 name: LuaRocks release
 on:
+  workflow_dispatch:
   push:
-    workflow_dispatch:
     tags: # Will upload to luarocks.org when a tag is pushed
       - "*"
 jobs:
