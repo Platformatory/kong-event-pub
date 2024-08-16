@@ -248,7 +248,7 @@ function KongEventPub:log(config)
 
 
   if filter_request_methods[context.request.method] == nil then
-    kong.log.info("Skipping publishing event with request correlation ID: "..context.request.correlelation_id.." since the HTTP method is not in the whitelist")
+    kong.log.info("Skipping publishing event with request correlation ID: "..context.request.correlation_id.." since the HTTP method is not in the whitelist")
     return
   end  
 

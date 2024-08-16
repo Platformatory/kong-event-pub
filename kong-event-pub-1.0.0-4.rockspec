@@ -1,6 +1,6 @@
 package = "kong-event-pub"
 
-version = "1.0.0-3"
+version = "1.0.0-4"
 
 supported_platforms = {"linux"}
 
@@ -16,7 +16,7 @@ description = {
 }
 
 dependencies = {
-  "lua-resty-kafka = 0.22-0",
+  "lua-resty-kafka = 0.23-0",
   "lua-resty-jit-uuid = 0.0.7-2",
   "lua-resty-openssl = 0.8.21-1",
   "uuid >= 0.3-1",
